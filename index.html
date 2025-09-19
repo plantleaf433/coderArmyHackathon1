@@ -167,22 +167,44 @@
                         </h2>
                         <p>Ordered List:</p>
                         <pre bgcolor="#f5f5f5"><code>&lt;ol&gt;
-  &lt;li&gt;Item One&lt;/li&gt;
-  &lt;li&gt;Item Two&lt;/li&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
+
                         <p>Unordered List:</p>
                         <pre bgcolor="#f5f5f5"><code>&lt;ul&gt;
-  &lt;li&gt;Point A&lt;/li&gt;
-  &lt;li&gt;Point B&lt;/li&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                        <p>Output:</p>
+
+                        <p>Nested List:</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea
+    &lt;ul&gt;
+      &lt;li&gt;Black tea&lt;/li&gt;
+      &lt;li&gt;Green tea&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                        <h3>Output:</h3>
                         <ol>
-                            <li>Item One</li>
-                            <li>Item Two</li>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
                         </ol>
                         <ul>
-                            <li>Point A</li>
-                            <li>Point B</li>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                        </ul>
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Tea
+                                <ul>
+                                    <li>Black tea</li>
+                                    <li>Green tea</li>
+                                </ul>
+                            </li>
                         </ul>
                         <hr>
                     </section>
@@ -231,12 +253,23 @@
                 </td>
 
                 <td width="50%" valign="top" bgcolor="#ffffff">
+
+
                     <section id="anchor">
                         <h2>
                             <font color="#333333">⚓ Anchor Tag</font>
                         </h2>
                         <p>The <code>&lt;a&gt;</code> tag creates hyperlinks.</p>
                         <pre bgcolor="#f5f5f5"><code>&lt;a href="page.html"&gt;Link Text&lt;/a&gt;</code></pre>
+                        <pre
+                            bgcolor="#f5f5f5"><code>&lt;a href="page.html" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
+                        <p>
+                            Output:</p>
+                        <br>Open in same tab
+                        <a href="https://www.wikipedia.org/">click here to go to Wikipedia site</a><br>
+                        open in new tab
+                        <a href="https://www.wikipedia.org/" target="_blank">click here to go to Wikipedia site</a>
+                        </p>
                         <hr>
                     </section>
 
@@ -249,25 +282,47 @@
                         <hr>
                     </section>
 
-                    <section id="image">
-                        <h2>
-                            <font color="#333333">🖼️ Adding Images & File Paths</font>
-                        </h2>
-                        <p><strong>Absolute path:</strong> Full URL to the file.</p>
-                        <p><strong>Relative path:</strong> Location relative to the current file.</p>
-                        <pre bgcolor="#f5f5f5"><code>&lt;img src="image1.png" alt="Example Image"&gt;</code></pre>
-                        <p align="center"><img
-                                src="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png"
-                                alt="Example Image" border="2"></p>
-                        <hr>
-                    </section>
-
                     <section id="encoding">
                         <h2>
                             <font color="#333333">🔡 UTF-8 & ASCII</font>
                         </h2>
-                        <p><strong>ASCII</strong> represents characters using 7 bits.</p>
-                        <p><strong>UTF-8</strong> is a modern encoding that supports all characters worldwide.</p>
+                        <h3>What is Character Encoding?</h3>
+                        <p>Character encoding is a system that translates characters, like letters and symbols, into a
+                            series of numbers that computers can understand. Think of it as a dictionary where each
+                            character is assigned a unique code.</p>
+                        <hr>
+                        <h3>ASCII</h3>
+                        <p>
+                            <strong>ASCII</strong> (American Standard Code for Information Interchange) is a classic
+                            character encoding that uses <strong>7 bits</strong> to represent 128 characters. This
+                            includes the English alphabet (A-Z, a-z), numbers (0-9), and basic symbols like punctuation.
+                        </p>
+                        <p>
+                            For example, in ASCII, the letter <code>'A'</code> is represented by the number 65.
+                        </p>
+                        <p>
+                            Because it only uses 7 bits, ASCII has a major limitation: it cannot represent characters
+                            from other languages, such as Chinese, Cyrillic, or Arabic, or even modern symbols and
+                            emojis.
+                        </p>
+                        <hr>
+                        <h3>UTF-8</h3>
+                        <p>
+                            <strong>UTF-8</strong> (Unicode Transformation Format) is the most widely used character
+                            encoding on the web today. It can represent every character in the <strong>Unicode
+                                standard</strong>, which includes characters from almost every writing system in the
+                            world.
+                        </p>
+                        <p>
+                            A key feature of UTF-8 is that it is a <strong>variable-width</strong> encoding. This means
+                            it can use between 1 and 4 bytes to represent a character. For English characters, it uses a
+                            single byte, just like ASCII. For more complex characters and emojis, it uses more bytes.
+                        </p>
+                        <p>
+                            Because of this, UTF-8 is **fully backward compatible with ASCII**. Any document written in
+                            pure ASCII is also a valid UTF-8 document. This is why it has become the universal standard
+                            for web development.
+                        </p>
                         <hr>
                     </section>
 
@@ -285,10 +340,44 @@
                         <h2>
                             <font color="#333333">🧠 Semantic Elements</font>
                         </h2>
-                        <p><code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;</code>
-                            describe the meaning of the content they wrap.</p>
+                        <p>
+                            <code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;</code>
+                            are semantic elements introduced in HTML5. They clearly describe the role or meaning of the
+                            content they contain, making web pages easier to read and understand — both for developers
+                            and browsers.
+                        </p>
+
+                        <ul>
+                            <li><strong>&lt;header&gt;</strong>: Represents introductory content, like a page title or
+                                navigation links.</li>
+                            <li><strong>&lt;footer&gt;</strong>: Contains footer content, like contact info, copyright,
+                                or related links.</li>
+                            <li><strong>&lt;main&gt;</strong>: Represents the dominant content of the document,
+                                excluding headers, footers, or sidebars.</li>
+                            <li><strong>&lt;section&gt;</strong>: Defines a thematic grouping of content, typically with
+                                a heading.</li>
+                            <li><strong>&lt;article&gt;</strong>: Used for self-contained content like blog posts, news
+                                articles, or user comments.</li>
+                        </ul>
+
+                        <p><strong>Benefits of semantic elements:</strong></p>
+                        <ul>
+                            <li>Enhance SEO by giving content structure</li>
+                            <li>Make your HTML more readable and maintainable</li>
+                        </ul>
+
+                        <p><strong>Example:</strong></p>
+                        <pre><code>&lt;article&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Understanding Semantic HTML&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;p&gt;Semantic HTML helps convey the meaning of content...&lt;/p&gt;
+  &lt;footer&gt;Written by Alex&lt;/footer&gt;
+&lt;/article&gt;</code></pre>
+
                         <hr>
                     </section>
+
 
                     <section id="forms">
                         <h2>
