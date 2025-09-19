@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML & Internet Basics Tutorial</title>
+</head>
+<body bgcolor="#f0f0f0">
+
+    <header align="center">
+        <h1 align="center"><font color="#0066cc">📄 HTML & Internet Basics Tutorial 🌐</font></h1>
+        <p>A beginner-friendly guide by Anshika Verma</p>
+        <hr color="#0066cc" size="3">
+    </header>
+
+    <marquee behavior="scroll" direction="left" bgcolor="#e0e0e0">
+        <font color="#555555">Welcome to the tutorial! Scroll down to learn about HTML and internet basics. Happy learning! ✨</font>
+    </marquee>
+
+    <nav>
+        <h2 align="center"><font color="#333333">📚 Table of Contents</font></h2>
+        <ul>
+            <li><a href="#html">What is HTML?</a></li>
+            <li><a href="#hyperlink">Hyperlinks</a></li>
+            <li><a href="#markup-language">Not a Programming Language</a></li>
+            <li><a href="#first-website">First Website</a></li>
+            <li><a href="#paragraph">Paragraph</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#linebreak">Line Break & HR</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#anchor">Anchor Tag</a></li>
+            <li><a href="#attributes">Attributes</a></li>
+            <li><a href="#image">Images</a></li>
+            <li><a href="#encoding">UTF-8 & ASCII</a></li>
+            <li><a href="#layout">Div, Class, ID</a></li>
+            <li><a href="#semantic">Semantic Elements</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#iframe">Iframes</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#networking">Networking Basics</a></li>
+        </ul>
+        <hr color="#0066cc" size="3">
+    </nav>
+
+    <main>
+        <table border="0" width="100%" cellpadding="10" cellspacing="10">
+            <tr>
+                <td width="50%" valign="top" bgcolor="#ffffff">
+                    <section id="html">
+                        <h2><font color="#333333">❓ What is HTML?</font></h2>
+                        <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language for creating webpages.</p>
+                        <hr>
+                    </section>
+                    
+                    <section id="hyperlink">
+                        <h2><font color="#333333">🔗 Concept of Hyperlink and Markup</font></h2>
+                        <p>A <em>hyperlink</em> is a link that connects one page to another. Markup refers to the use of tags to structure and present content.</p>
+                        <p>Example:</p>
+                        <pre bgcolor="#f5f5f5" border="1"><code>&lt;a href="https://www.wikipedia.org"&gt;Go to Wikipedia&lt;/a&gt;</code></pre>
+                        <p>Output:</p>
+                        <p><a href="https://www.wikipedia.org"><font color="purple">Go to Wikipedia</font></a></p>
+                        <hr>
+                    </section>
+                    
+                    <section id="markup-language">
+                        <h2><font color="#333333">🚫 HTML is Not a Programming Language</font></h2>
+                        <p>HTML is a <strong>markup language</strong>, meaning it describes the structure of data rather than performing logic like a programming language does.</p>
+                        <hr>
+                    </section>
+                    
+                    <section id="first-website">
+                        <h2><font color="#333333">🌍 World's First Website</font></h2>
+                        <p>The first website was created by Tim Berners-Lee in 1991. It is still live:
+                            <a href="http://info.cern.ch"><font color="purple">http://info.cern.ch</font></a>.
+                        </p>
+                        <hr>
+                    </section>
+
+                    <section id="paragraph">
+                        <h2><font color="#333333">✍️ Paragraph</font></h2>
+                        <p>Paragraphs in HTML are written using the <code>&lt;p&gt;</code> tag.</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                        <hr>
+                    </section>
+
+                    <section id="headings">
+                        <h2><font color="#333333">🔤 Headings</font></h2>
+                        <p>HTML provides six heading levels, from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest).</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;</code></pre>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <hr>
+                    </section>
+                    
+                    <section id="linebreak">
+                        <h2><font color="#333333">⬇️ Line Break & Horizontal Rule</font></h2>
+                        <p>Line break: <code>&lt;br&gt;</code></p>
+                        <p>Horizontal rule: <code>&lt;hr&gt;</code></p>
+                        <pre bgcolor="#f5f5f5"><code>This is line 1.&lt;br&gt;This is line 2.
+&lt;hr&gt;</code></pre>
+                        <p>This is line 1.<br>This is line 2.</p>
+                        <hr>
+                        <hr>
+                    </section>
+                    
+                    <section id="lists">
+                        <h2><font color="#333333">📋 Types of Lists</font></h2>
+                        <p>Ordered List:</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;ol&gt;
+  &lt;li&gt;Item One&lt;/li&gt;
+  &lt;li&gt;Item Two&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        <p>Unordered List:</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;ul&gt;
+  &lt;li&gt;Point A&lt;/li&gt;
+  &lt;li&gt;Point B&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                        <p>Output:</p>
+                        <ol>
+                            <li>Item One</li>
+                            <li>Item Two</li>
+                        </ol>
+                        <ul>
+                            <li>Point A</li>
+                            <li>Point B</li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="tables">
+                        <h2><font color="#333333">📊 Tables</font></h2>
+                        <p>Tables allow data to be organized into rows and columns.</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                        <p>Output:</p>
+                        <table border="2" cellpadding="5" cellspacing="2" bgcolor="#ffffff">
+                            <tr bgcolor="#cccccc">
+                                <th>Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Alice</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Bob</td>
+                                <td>30</td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </section>
+                    
+                    <section id="comments">
+                        <h2><font color="#333333">📝 Adding Comments</font></h2>
+                        <p>Comments in HTML: </p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;!-- This is a comment --&gt;</code></pre>
+                        <hr>
+                    </section>
+                </td>
+                
+                <td width="50%" valign="top" bgcolor="#ffffff">
+                    <section id="anchor">
+                        <h2><font color="#333333">⚓ Anchor Tag</font></h2>
+                        <p>The <code>&lt;a&gt;</code> tag creates hyperlinks.</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;a href="page.html"&gt;Link Text&lt;/a&gt;</code></pre>
+                        <hr>
+                    </section>
+                    
+                    <section id="attributes">
+                        <h2><font color="#333333">🏷️ Attributes</font></h2>
+                        <p>Attributes provide additional information about HTML elements.</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;img src="image.png" alt="Description"&gt;</code></pre>
+                        <hr>
+                    </section>
+                    
+                    <section id="image">
+                        <h2><font color="#333333">🖼️ Adding Images & File Paths</font></h2>
+                        <p><strong>Absolute path:</strong> Full URL to the file.</p>
+                        <p><strong>Relative path:</strong> Location relative to the current file.</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;img src="image1.png" alt="Example Image"&gt;</code></pre>
+                        <p align="center"><img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png" alt="Example Image" border="2"></p>
+                        <hr>
+                    </section>
+                    
+                    <section id="encoding">
+                        <h2><font color="#333333">🔡 UTF-8 & ASCII</font></h2>
+                        <p><strong>ASCII</strong> represents characters using 7 bits.</p>
+                        <p><strong>UTF-8</strong> is a modern encoding that supports all characters worldwide.</p>
+                        <hr>
+                    </section>
+                    
+                    <section id="layout">
+                        <h2><font color="#333333">🧱 Div, Class, and ID</font></h2>
+                        <p><code>&lt;div&gt;</code> is a generic container.</p>
+                        <p><code>class</code> groups elements together.</p>
+                        <p><code>id</code> uniquely identifies an element.</p>
+                        <hr>
+                    </section>
+                    
+                    <section id="semantic">
+                        <h2><font color="#333333">🧠 Semantic Elements</font></h2>
+                        <p><code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;</code> describe the meaning of the content they wrap.</p>
+                        <hr>
+                    </section>
+                    
+                    <section id="forms">
+                        <h2><font color="#333333">✍️ Forms & Input Fields</font></h2>
+                        <pre bgcolor="#f5f5f5"><code>&lt;form&gt;
+  &lt;label&gt;Text: &lt;input type="text"&gt;&lt;/label&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;</code></pre>
+                        <p>Output:</p>
+                        <form>
+                            <table border="0" cellpadding="5">
+                                <tr><td><label>Text:</label></td><td><input type="text"></td></tr>
+                                <tr><td><label>Password:</label></td><td><input type="password"></td></tr>
+                                <tr><td><label>Email:</label></td><td><input type="email"></td></tr>
+                                <tr><td><label>Number:</label></td><td><input type="number"></td></tr>
+                                <tr><td><label>Checkbox:</label></td><td><input type="checkbox"></td></tr>
+                                <tr><td><label>Radio:</label></td><td><input type="radio" name="r"></td></tr>
+                                <tr><td><label>File:</label></td><td><input type="file"></td></tr>
+                                <tr><td><label>Date:</label></td><td><input type="date"></td></tr>
+                                <tr><td><label>Color:</label></td><td><input type="color"></td></tr>
+                                <tr><td><label>Range:</label></td><td><input type="range"></td></tr>
+                                <tr><td colspan="2" align="center"><input type="submit"></td></tr>
+                            </table>
+                        </form>
+                        <hr>
+                    </section>
+
+                    <section id="iframe">
+                        <h2><font color="#333333">📺 Iframes</font></h2>
+                        <pre bgcolor="#f5f5f5"><code>&lt;iframe src="https://www.wikipedia.org" width="300" height="200"&gt;&lt;/iframe&gt;</code></pre>
+                        <p align="center"><iframe src="https://www.wikipedia.org" width="400" height="250" frameborder="2"></iframe></p>
+                        <hr>
+                    </section>
+
+                    <section id="media">
+                        <h2><font color="#333333">🎬 Media</font></h2>
+                        <p>Video with autoplay:</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;video width="300" controls&gt;
+  &lt;source src="https://www.vecteezy.com/video/1625787-lightning-storm-animation-background" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+                        <p align="center"><video width="300" controls>
+                            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                        </video></p>
+                        <p>Audio:</p>
+                        <pre bgcolor="#f5f5f5"><code>&lt;audio controls&gt;
+  &lt;source src="sample.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+                        <p align="center"><audio controls>
+                            <source src="sample-9s.mp3" type="audio/mpeg">
+                        </audio></p>
+                        <hr>
+                    </section>
+
+                    <section id="networking">
+                        <h2><font color="#333333">🌐 Networking Basics</font></h2>
+                        <dl>
+                            <dt><h3>IP Address 💻</h3></dt>
+                            <dd>A unique number assigned to a device on a network.</dd>
+                            <dt><h3>MAC Address 🆔</h3></dt>
+                            <dd>A hardware identifier for network interfaces.</dd>
+                            <dt><h3>Router 📡</h3></dt>
+                            <dd>Forwards data packets between networks.</dd>
+                            <dt><h3>Switch 🔄</h3></dt>
+                            <dd>Connects multiple devices in a network.</dd>
+                            <dt><h3>Hub 🔌</h3></dt>
+                            <dd>A simple device that broadcasts data to all connected devices.</dd>
+                            <dt><h3>How Internet Works 🌐</h3></dt>
+                            <dd>The internet is a network of networks connected using IP, routing, and DNS.</dd>
+                            <dt><h3>DNS & Resolution 🖥️➡️📍</h3></dt>
+                            <dd>DNS (Domain Name System) translates domain names like <em>example.com</em> into IP addresses.</dd>
+                        </dl>
+                        <hr>
+                    </section>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer align="center">
+        <hr color="#0066cc" size="3">
+        <p><font size="-1">© 2025 HTML Tutorial. Created using only HTML. ✨</font></p>
+    </footer>
+
+</body>
+</html>
